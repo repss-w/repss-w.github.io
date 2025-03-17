@@ -1,1 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4th Vision-based Remote Physiological Signal Sensing (RePSS) Challenge & Workshop</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+        }
+        
+        .navbar {
+            background-color: #000;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 16px;
+        }
+        
+        .navbar a:hover {
+            text-decoration: underline;
+        }
 
+	.navbar a.active {
+            font-weight: bold;
+            border-bottom: 2px solid #fff;
+        }
+        
+        .hero {
+            background-color: #666;
+            color: white;
+            padding: 50px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://legends.pokemon.com/_images/logos/legendslogo_en-2x.webp');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .hero-content {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            align-items: center;
+        }
+        
+        .logo {
+            width: 220px;
+            margin-right: 40px;
+        }
+        
+        .hero-text h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        
+        .hero-text p {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        
+        .hero-text a {
+            color: #fff;
+            text-decoration: underline;
+        }
+        
+        .content {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+        
+        .content h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .content p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .content a {
+            color: #333;
+            text-decoration: underline;
+        }
+        
+        .content ul {
+            margin-left: 40px;
+            margin-bottom: 20px;
+        }
+        
+        .content li {
+            margin-bottom: 10px;
+        }
+
+        .image-gallery {
+            margin: 40px 0;
+        }
+
+        .image-gallery h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .gallery-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .gallery-item {
+            flex: 1;
+            min-width: calc(100% - 15px);
+            max-width: calc(100% - 15px);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="workshop.html">Workshop</a>
+        <a href="event_schedule.html">Event schedule</a>
+        <a href="challenge.html">Challenge</a>
+        <a href="organizers.html">Organizers</a>
+    </nav>
+    
+    <div class="hero">
+        <div class="hero-content">
+
+            <div class="hero-text">
+		<img src="https://legends.pokemon.com/_images/logos/legendslogo_en-2x.webp" alt="RePSS Logo" class="logo">
+                <h1>The 4th Vision-based Remote Physiological Signal Sensing (RePSS) Challenge & Workshop</h1>
+                <p>To be held at <a href="https://2025.ijcai.org/">IJCAI 2025</a>, 5th August 2025, Montreal, Canada</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="content">
+        <h2>Overview</h2>
+        <p>The 4th Vision-based Remote Physiological Signal Sensing (RePSS) workshop will be held in conjunction with the <a href="https://2025.ijcai.org/">International Joint Conference on Artificial Intelligence (IJCAI 2025)</a> on August 5th, 2025.</p>
+        
+        <p>The Vision-based Remote Physiological Signal Sensing (RePSS) workshop covers research topics related to remote physiological signal sensing from facial videos. Facial videos contain subtle color and motion change information induced by heartbeats which reveals physiological signals like remote photoplethysmography (rPPG). Extracting subtle physiological signals from facial videos requires robust computer vision algorithms and biomedical signal processing methods. As an interdisciplinary research field, the workshop aims to gather researchers from different disciplines to join thoughts and ideas, and also to provide a platform for fair competition and resource sharing. RePSS workshop is a series starting from the 1st RePSS on CVPR2020, and the 2nd RePSS on ICCV2021, and the 3rd RePSS on IJCAI2024, and now the 4th one. It is organized in the form of "workshop + challenge + invited talks" with an emphasis on the challenge.</p>
+        
+        <p>The 4th RePSS has two parts.</p>
+        
+        <ul>
+            <li>The first part is the workshop that aims at exploring the devices, methodologies and applications of camera-based physiological sensing.</li>
+	    <li>The second part is the challenge for remote physiological signal measurement.</li>
+        </ul>
+
+		<div class="image-gallery">
+ 
+            <div class="gallery-container">
+
+                
+
+                <div class="gallery-item">
+                    <img src="https://repss-w.github.io/index/52e598198951454bed6af534bc126db9.jpg">
+                </div>
+
+                
+            </div>
+        </div>
+
+
+	<h2>Contact</h2>
+	<p>The contact info is listed as follows:</p>
+	<ul>
+		<li>For questions regarding workshop submissions and general issue, please get in touch with xiaobai.li@zju.edu.cn.</li>
+		<li>For questions regarding the challenge, please contact both zhaodong.sun@oulu.fi and xiaobai.li@zju.edu.cn. </li>
+	</ul>
+
+    </div>
+
+    <script>
+	document.addEventListener('DOMContentLoaded', function() {
+    
+		const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    
+    
+		const navLinks = document.querySelectorAll('.navbar a');
+    
+    
+		navLinks.forEach(link => {
+        
+			const linkPage = link.getAttribute('href');
+        
+        
+			if (linkPage === currentPage || 
+(currentPage === '' && linkPage === 'index.html') ||
+ (currentPage === '/' && linkPage === 'index.html')) {
+  
+		          link.classList.add('active');
+        
+			}
+    
+		});
+
+	});
+
+    </script>
+</body>
+</html>
