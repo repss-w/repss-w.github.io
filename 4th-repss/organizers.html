@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4th Vision-based Remote Physiological Signal Sensing (RePSS) Challenge & Workshop</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+        }
+        
+        .navbar {
+            background-color: #000;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 16px;
+        }
+        
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+	.navbar a.active {
+            font-weight: bold;
+            border-bottom: 2px solid #fff;
+        }
+        
+        .hero {
+            background-color: #666;
+            color: white;
+            padding: 50px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://legends.pokemon.com/_images/logos/legendslogo_en-2x.webp');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .hero-content {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            align-items: center;
+        }
+        
+        .logo {
+            width: 220px;
+            margin-right: 40px;
+        }
+        
+        .hero-text h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        
+        .hero-text p {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        
+        .hero-text a {
+            color: #fff;
+            text-decoration: underline;
+        }
+        
+        .content {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+        
+        .content h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .content p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .content a {
+            color: #333;
+            text-decoration: underline;
+        }
+        
+        .content ul {
+            margin-left: 40px;
+            margin-bottom: 20px;
+        }
+        
+        .content li {
+            margin-bottom: 10px;
+        }
+
+        .image-gallery {
+            margin: 40px 0;
+        }
+
+        .image-gallery h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .gallery-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .gallery-item {
+            flex: 1;
+            min-width: calc(25% - 15px);
+            max-width: calc(25% - 15px);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 180px;
+            display: block;
+            object-fit: cover;
+        }
+
+	.chair-name {
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-size: 18px;
+		text-align: center; 
+        }
+        
+        .chair-affiliation {
+            font-size: 14px;
+            line-height: 1.4;
+            padding: 0 10px 15px;
+		text-align: center; 
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="workshop.html">Workshop</a>
+        <a href="event_schedule.html">Event schedule</a>
+        <a href="challenge.html">Challenge</a>
+        <a href="organizers.html">Organizers</a>
+    </nav>
+    
+    <div class="hero">
+        <div class="hero-content">
+
+            <div class="hero-text">
+		<img src="https://legends.pokemon.com/_images/logos/legendslogo_en-2x.webp" alt="RePSS Logo" class="logo">
+                <h1>The 4th RePSS - Multimodal Fusion Learning for Remote Physiological Signal Sensing</h1>
+                <p>To be held at <a href="https://2025.ijcai.org/">IJCAI 2025</a>, 5th August 2025, Montreal, Canada</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="content">
+        <h2>General Chairs</h2>
+	<div class="image-gallery">
+ 
+            <div class="gallery-container">
+
+                
+
+                <div class="gallery-item">
+                    <img src="https://repss-w.github.io/Organizers/f31abde9a4fc6337644ac494a33535ec.jpg">
+			<p class="chair-name"><a href="https://www.oulu.fi/en/researchers/xiaobai-li">Xiaobai Li</a></p>
+                    <p class="chair-affiliation">Zhejiang University, China</p>
+			<p class="chair-affiliation">University of Oulu, Finland</p>
+                </div>
+                
+          
+                <div class="gallery-item">
+                    <img src="https://repss-w.github.io/Organizers/52e449935ffd30c62f33eb6649375647.jpg">
+			<p class="chair-name"><a href="https://sites.google.com/site/huhanhomepage">Hu Han</a></p>
+                	<p class="chair-affiliation">Institute of Computing Technology (ICT), Chinese Academy of Sciences (CAS), China</p>
+                </div>
+                
+    
+                <div class="gallery-item">
+                    <img src="https://repss-w.github.io/Organizers/6a086e9cec79cbc3f1766415476631be.jpg">
+			<p class="chair-name"><a href="http://www.antitza.com/">Antitza Dantcheva</a></p>
+                <p class="chair-affiliation">STARS team, INRIA, France</p>
+                </div>
+            </div>
+
+
+
+
+
+    </div>
+<div class="content">
+		 	<h2>Advisory Board</h2>
+	<div class="image-gallery">
+ 
+            <div class="gallery-container">
+
+                
+
+                <div class="gallery-item">
+                    <img src="https://repss-w.github.io/Organizers/c77aeb49666aec0e5a978428b430c6fb.jpg">
+			<p class="chair-name"><a href="https://people.ucas.edu.cn/~sgshan?language=en">Shiguang Shan</a></p>
+                    <p class="chair-affiliation">Institute of Computing Technology (ICT), Chinese Academy of Sciences (CAS), China</p>
+                </div>
+                
+          
+                <div class="gallery-item">
+                    <img src="https://repss-w.github.io/Organizers/d795b7da9c50f6ac50fcfc8f26c19c92.jpg">
+			<p class="chair-name"><a href="https://gyzhao-nm.github.io/Guoying/">Guoying Zhao</a></p>
+                	<p class="chair-affiliation">University of Oulu, Finland</p>
+                </div>
+                
+            </div>
+		
+        </div>
+</div>
+
+    <script>
+	document.addEventListener('DOMContentLoaded', function() {
+    
+		const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    
+    
+		const navLinks = document.querySelectorAll('.navbar a');
+    
+    
+		navLinks.forEach(link => {
+        
+			const linkPage = link.getAttribute('href');
+        
+        
+			if (linkPage === currentPage || 
+(currentPage === '' && linkPage === 'index.html') ||
+ (currentPage === '/' && linkPage === 'index.html')) {
+  
+		          link.classList.add('active');
+        
+			}
+    
+		});
+
+	});
+
+    </script>
+</body>
+</html>
