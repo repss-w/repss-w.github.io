@@ -50,19 +50,27 @@
             background-size: cover;
             background-position: center;
         }
-        
+	.hero-text-content {
+            margin-right: 40px; /* 为文字内容添加右侧间距 */
+        }
+	    
         .hero-content {
             display: flex;
             max-width: 1200px;
             margin: 0 auto;
             align-items: center;
+	justify-content: flex-end;
         }
         
         .logo {
-            width: 220px;
-            margin-right: 40px;
+           width: 220px;
+            margin-left: 40px; 
         }
-        
+        .hero-text {
+            display: flex; 
+            align-items: center;
+            text-align: right; 
+        }
         .hero-text h1 {
             font-size: 36px;
             margin-bottom: 20px;
@@ -164,9 +172,14 @@
         <div class="hero-content">
 
             <div class="hero-text">
-		<!-- <img src="https://legends.pokemon.com/_images/logos/legendslogo_en-2x.webp" alt="RePSS Logo" class="logo"> -->
+		<br />
+		    <br />
+		 
+		    <div class="hero-text-content">
                 <h1>The 4th RePSS - Multimodal Fusion Learning for Remote Physiological Signal Sensing</h1>
-                <p>To be held at <a href="https://2025.ijcai.org/">IJCAI 2025</a>, 5th August 2025, Montreal, Canada</p>
+                <p>To be held at <a href="https://2025.ijcai.org/">IJCAI 2025</a>, August 2025, Montreal, Canada</p>
+		    </div>
+		    <img src="https://repss-w.github.io/index/3a474b48db58840e6a26bc4bdb2a2bd6.jpg" alt="RePSS Logo" class="logo"> 
             </div>
         </div>
     </div>
@@ -175,7 +188,7 @@
         <h2>Overview</h2>
         <p>The 4th Vision-based Remote Physiological Signal Sensing (RePSS) workshop will be held in conjunction with the <a href="https://2025.ijcai.org/">International Joint Conference on Artificial Intelligence (IJCAI 2025)</a> on August 5th, 2025.</p>
         
-        <p>The Vision-based Remote Physiological Signal Sensing (RePSS) workshop covers research topics related to remote physiological signal sensing from facial videos. Facial videos contain subtle color and motion change information induced by heartbeats which reveals physiological signals like remote photoplethysmography (rPPG). Extracting subtle physiological signals from facial videos requires robust computer vision algorithms and biomedical signal processing methods. As an interdisciplinary research field, the workshop aims to gather researchers from different disciplines to join thoughts and ideas, and also to provide a platform for fair competition and resource sharing. RePSS workshop is a series starting from the 1st RePSS on CVPR2020, and the 2nd RePSS on ICCV2021, and the 3rd RePSS on IJCAI2024, and now the 4th one. It is organized in the form of "workshop + challenge + invited talks" with an emphasis on the challenge.</p>
+        <p>The Vision-based Remote Physiological Signal Sensing (RePSS) workshop covers research topics related to remote physiological signal sensing from facial videos. Facial videos contain subtle color and motion change information induced by heartbeats which reveals physiological signals like remote photoplethysmography (rPPG). Extracting subtle physiological signals from facial videos requires robust computer vision algorithms and biomedical signal processing methods. As an interdisciplinary research field, the workshop aims to gather researchers from different disciplines to join thoughts and ideas, and also to provide a platform for fair competition and resource sharing. RePSS workshop is a It is organized in the form of "workshop + challenge + invited talks" with an emphasis on the challenge.</p>
         
         <p>The 4th RePSS has two parts.</p>
         
@@ -184,7 +197,23 @@
 	    <li>The second part is the challenge for remote physiological signal measurement.</li>
         </ul>
 
-		<div class="image-gallery">
+	<h2>Past RePSS</h2>
+	    <ul>
+		<li><a href="https://competitions.codalab.org/competitions/22287">1st RePSS</a></li>
+		    <li><a href="https://competitions.codalab.org/competitions/30855">2nd RePSS</a></li>
+		    <li><a href="https://repss-w.github.io">3rd RePSS</a></li>
+	    </ul>
+
+
+	<h2>Contact</h2>
+	<p>The contact info is listed as follows:</p>
+	<ul>
+		<li>For questions regarding workshop submissions and general issue, please get in touch with xiaobai.li@zju.edu.cn.</li>
+		<li>For questions regarding the challenge, please contact both chying@zju.edu.cn and xiaobai.li@zju.edu.cn. </li>
+	</ul>
+
+
+	    		<div class="image-gallery">
  
             <div class="gallery-container">
 
@@ -197,15 +226,6 @@
                 
             </div>
         </div>
-
-
-	<h2>Contact</h2>
-	<p>The contact info is listed as follows:</p>
-	<ul>
-		<li>For questions regarding workshop submissions and general issue, please get in touch with xiaobai.li@zju.edu.cn.</li>
-		<li>For questions regarding the challenge, please contact both chying@zju.edu.cn and xiaobai.li@zju.edu.cn. </li>
-	</ul>
-
     </div>
 
     <script>
