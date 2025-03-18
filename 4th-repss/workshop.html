@@ -39,28 +39,37 @@
             border-bottom: 2px solid #fff;
         }
         
-        .hero {
+.hero {
             background-color: #666;
             color: white;
             padding: 50px 0;
             display: flex;
             align-items: center;
             justify-content: center;
-            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://legends.pokemon.com/_images/logos/legendslogo_en-2x.webp');
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('pic.bmp');
             background-size: cover;
             background-position: center;
         }
-        
+	.hero-text-content {
+            margin-right: 40px;
+        }
+	    
         .hero-content {
             display: flex;
             max-width: 1200px;
             margin: 0 auto;
             align-items: center;
+	justify-content: flex-end;
         }
         
         .logo {
-            width: 220px;
-            margin-right: 40px;
+           width: 220px;
+            margin-left: 40px; 
+        }
+        .hero-text {
+            display: flex; 
+            align-items: center;
+            text-align: right; 
         }
         
         .hero-text h1 {
@@ -217,9 +226,14 @@
         <div class="hero-content">
 
             <div class="hero-text">
-		<img src="https://legends.pokemon.com/_images/logos/legendslogo_en-2x.webp" alt="RePSS Logo" class="logo">
+		<br />
+		    <br />
+		 
+		    <div class="hero-text-content">
                 <h1>The 4th RePSS - Multimodal Fusion Learning for Remote Physiological Signal Sensing</h1>
-                <p>To be held at <a href="https://2025.ijcai.org/">IJCAI 2025</a>, 5th August 2025, Montreal, Canada</p>
+                <p>To be held at <a href="https://2025.ijcai.org/">IJCAI 2025</a>, August 2025, Montreal, Canada</p>
+		    </div>
+		    <img src="https://repss-w.github.io/index/3a474b48db58840e6a26bc4bdb2a2bd6.jpg" alt="RePSS Logo" class="logo"> 
             </div>
         </div>
     </div>
