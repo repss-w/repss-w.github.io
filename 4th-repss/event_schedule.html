@@ -129,6 +129,7 @@
             box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
             border-radius: 8px;
             overflow: hidden; 
+			display: none;
         }
 
         .schedule-table th {
@@ -358,6 +359,11 @@
 			}
     
 		});
+
+		const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('show') === '1') {
+        document.querySelector('.schedule-table').style.display = 'table';
+    }
 
 	});
 
