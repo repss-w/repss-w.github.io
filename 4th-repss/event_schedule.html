@@ -120,6 +120,88 @@
             margin-bottom: 10px;
         }
 
+
+        .schedule-table {
+            width: 100%;
+            border-collapse: collapse; 
+            margin: 30px 0;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+            border-radius: 8px;
+            overflow: hidden; 
+        }
+
+        .schedule-table th {
+            background-color: #333; 
+            color: white;
+            padding: 15px 20px;
+            text-align: left;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .schedule-table td {
+            padding: 15px 20px;
+            border-bottom: 1px solid #e0e0e0; 
+            vertical-align: top; 
+        }
+
+        .schedule-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .schedule-table tr:hover {
+            background-color: #f0f0f0; 
+            transition: background-color 0.3s ease;
+        }
+
+        .schedule-table .time-column {
+            font-weight: bold;
+            color: #666;
+            white-space: nowrap; 
+            width: 120px;
+        }
+
+        .schedule-table .speaker-column {
+            font-weight: 600;
+            color: #333;
+            width: 200px;
+        }
+
+        .schedule-table .topic-column {
+            color: #333;
+        }
+
+        .schedule-table .break-event {
+            background-color: #e8f4f8;
+            font-style: italic;
+            color: #666;
+        }
+
+        .schedule-table .break-event:hover {
+            background-color: #d6ecf2;
+        }
+
+        @media (max-width: 768px) {
+            .schedule-table {
+                font-size: 14px;
+            }
+            
+            .schedule-table th,
+            .schedule-table td {
+                padding: 10px 8px;
+            }
+            
+            .schedule-table .time-column {
+                width: 80px;
+            }
+            
+            .schedule-table .speaker-column {
+                width: 150px;
+            }
+        }
+
+		
         .image-gallery {
             margin: 40px 0;
         }
@@ -187,12 +269,70 @@
     <div class="content">
         <h2>Schedule </h2>
 	    <p>TBD</p>
+		<table class="schedule-table">
+            <thead>
+                <tr>
+                    <th class="time-column">Time</th>
+                    <th class="speaker-column">Speaker/Activity</th>
+                    <th class="topic-column">Title/Description</th>
+                </tr>
+            </thead>
+            <tbody>
+				<tr>
+                    <td class="time-column">08:30 - 09:00</td>
+                    <td class="speaker-column">Xiaobai Li</td>
+                    <td class="topic-column">Opening</td>
+                </tr>
+				<tr>
+                    <td class="time-column">09:00 - 09:30</td>
+                    <td class="speaker-column">Juan Cheng</td>
+                    <td class="topic-column">Invited Speaker 1: Remote HRV Monitoring via Long-Range BVP Signal Recovery</td>
+                </tr>
+				<tr>
+                    <td class="time-column">09:30 - 10:00</td>
+                    <td class="speaker-column">Jingang Shi</td>
+                    <td class="topic-column">Invited Speaker 2: Towards Real-world Remote Physiological Signal Measurement</td>
+                </tr>
+
+				<tr class="break-event">
+                    <td class="time-column">10:00 - 10:15</td>
+                    <td class="speaker-column"></td>
+                    <td class="topic-column">Coffee Break</td>
+                </tr>
+				<tr>
+                    <td class="time-column">10:15 - 10:30</td>
+                    <td class="speaker-column">Wei Qian</td>
+                    <td class="topic-column">DiffRePSS: A Diffusion model for Remote Physiological Signal Sensing</td>
+                </tr>
+				<tr>
+                    <td class="time-column">10:30 - 10:45</td>
+                    <td class="speaker-column">Zhiqin Zhou</td>
+                    <td class="topic-column">Multimodal Video-Based Heart Rate Estimation with Temporal Difference Transformer</td>
+                </tr>
+				<tr>
+                    <td class="time-column">10:45 - 11:00</td>
+                    <td class="speaker-column">Xiuxe Jia</td>
+                    <td class="topic-column">A Frequency-Selective Multimodal Remote Physiological Signal Sensing System Based on Mamba Architecture
+</td>
+                </tr>
+				<tr>
+                    <td class="time-column">11:00 - 11:15</td>
+                    <td class="speaker-column">JUNG AN HSUEH</td>
+                    <td class="topic-column">TransET: A Lightweight Multimodal Fusion Model with Transformer and ExtraTrees for Non-Contact Blood Pressure and Oxygen Saturation Estimation</td>
+                </tr>
+				<tr>
+                    <td class="time-column">11:15 - 11:30</td>
+                    <td class="speaker-column">Boxiang Liu</td>
+                    <td class="topic-column">Remote heart rate estimation based on variational mode decomposition and lip-motion-guided artifact removal</td>
+                </tr>
+				<tr>
+                    <td class="time-column">11:30 - 11:45</td>
+                    <td class="speaker-column"></td>
+                    <td class="topic-column">Award Ceremony</td>
+                </tr>
+			</tbody>
+        </table>
         
-
-
-
-
-
     </div>
 
     <script>
